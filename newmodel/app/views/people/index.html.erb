@@ -1,0 +1,20 @@
+<h1>Listing test</h1>
+<%= link_to 'Person form', new_person_path %>
+<table>
+  <tr>
+    <th>first_name</th>
+    <th>last_name</th>
+  </tr>
+ 
+  <% @people.each do |person| %>
+    <tr>
+      <td><%= person.first_name %></td>
+      <td><%= person.last_name %></td>
+      <td><%= link_to 'Show', person_path(person) %></td>
+      <td><%= link_to 'Edit', edit_person_path(person) %></td>
+      <td><%= link_to 'Destroy', person_path(person),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

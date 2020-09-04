@@ -39,8 +39,6 @@ end
 # bin/rails db:migrate
 
 # 且告诉我们创建了一个person表
-# Person create([{:first_name
+# rails c
 # Person.create([{:first_name => 'Haichao',:last_name => 'Li'},{:first_name => 'Heping',:last_name => 'Ling'},{:first_name => 'Xiao',:last_name => 'Ling’}]),{:first_name => 'Ziqiu',:last_name => 'He'},{:first_name => 'Jianjian',:last_name => 'Li'}])
 
-# 使用rspec命令运行您的规格
-# bundle exec rspec
