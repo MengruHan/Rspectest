@@ -1,10 +1,9 @@
 require 'rails_helper'
 #RSpec.describe Person, type: :model do
   #pending "add some examples to (or delete) #{__FILE__}"
-
 describe Person do 
   it 'is valid with a first_name,last_name' do
-    person = Person.new(first_name: 'mengru',last_name: 'Han')
+    person = Person.new(first_name: 'mengru',last_name: 'Han', gender:'Female')
       expect(person).to be_valid
   end
   #创建一个person对象，并调用rspec的be_valid 皮配器验证其合法性
@@ -16,7 +15,15 @@ describe Person do
   end
 end
 
+
+      
+
+
+
+
+
 # 创建一个项目
+
 # rails new xx
 
 # 在Gemfile配置文件中添加

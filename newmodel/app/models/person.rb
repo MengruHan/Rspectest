@@ -2,11 +2,9 @@ class Person < ApplicationRecord
   def full_name
     [first_name,last_name].join(' ')#我们在Person中有一个full_name方法
   end  
-  validates :first_name, presence: true,
-            length: { minimum: 5}
-  validates :last_name, presence: true,
-            length: { minimum: 2}
-
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :gender, presence: true
 end
 
 
