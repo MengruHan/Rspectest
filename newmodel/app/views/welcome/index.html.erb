@@ -1,2 +1,4 @@
 <h1>Hello, This is Rails!</h1>
+<% if user_signed_in? %>
 <%= link_to 'Name form', controller: 'people' %>
+<% end %>
